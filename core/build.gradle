@@ -21,9 +21,8 @@ android {
         }
     }
     
-    lint {
-        abortOnError false
-        disable 'MissingTranslation'
+    lintOptions {
+          abortOnError false
     }
 }
 
