@@ -6,6 +6,10 @@ group = 'com.github.danimahardhika'
 android {
     compileSdkVersion rootProject.ext.CompileSdk
     buildToolsVersion rootProject.ext.BuildTools
+      lintOptions {
+          abortOnError false
+      }
+  }
 
     defaultConfig {
         minSdkVersion rootProject.ext.MinSdk
