@@ -6,9 +6,7 @@ group = 'com.github.danimahardhika'
 android {
     compileSdkVersion rootProject.ext.CompileSdk
     buildToolsVersion rootProject.ext.BuildTools
-      lintOptions {
-          abortOnError false
-      }
+
   }
 
     defaultConfig {
@@ -23,6 +21,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    
+    lintOptions {
+    abortOnError false
     }
 }
 
